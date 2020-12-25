@@ -1,0 +1,103 @@
+{
+  "products": [
+    {
+      "comments": [],
+      "likes": 0,
+      "name": "SD GORGEOUS STUDIO+Walk 2 best places+SANITIZED!",
+      "author": "Entire apartment hosted by Neil",
+      "price": "$73/ night",
+      "description": "Newly remodeled large artist studio,",
+      "photo": "https://a0.muscache.com/im/pictures/6adad3fe-5e59-43db-962c-d36a531ee462.jpg?im_w=1200",
+      "genre": "entireHomes",
+      "id": 1
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "name": "Paris house",
+      "author": "John",
+      "price": "100 $ / night",
+      "description": "Nice house in France",
+      "photo": "https://a0.muscache.com/im/pictures/7b4d0da4-cd69-45a9-9178-7a24d3113f64.jpg?im_w=1200",
+      "genre": "entireHomes",
+      "id": 2
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "name": "Loft in London",
+      "author": "Patrick Brien",
+      "price": "45 $ / night",
+      "description": "Beutiful beach house",
+      "photo": "https://a0.muscache.com/im/pictures/07b7ea63-c1f8-4b0f-ba16-29779079e75c.jpg?im_w=1200",
+      "genre": "entireHomes",
+      "id": 3
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "photo": "https://a0.muscache.com/im/pictures/07b7ea63-c1f8-4b0f-ba16-29779079e75c.jpg?im_w=1200",
+      "name": "Sunny house in San Diego",
+      "author": "Tom Cruise",
+      "price": "55 $/night",
+      "description": "Sunny house in San Diego",
+      "genre": "cabbinsAndCottages",
+      "id": 4
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "photo": "https://a0.muscache.com/im/pictures/7b88ec1a-ed37-42f0-8056-d3bc1fff9a4c.jpg?im_w=1200",
+      "name": "House in LA",
+      "author": "Chis",
+      "price": "34 $/ night",
+      "description": "House in LA",
+      "genre": "cabbinsAndCottages",
+      "id": 5
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "photo": "https://a0.muscache.com/im/pictures/ab14e2ca-0a11-4530-81e3-9f7f9ab54b4f.jpg?im_w=1200",
+      "name": "Appartment in New York",
+      "author": "Tracey",
+      "price": "77 $/night",
+      "description": "Appartment in New York",
+      "genre": "cabbinsAndCottages",
+      "id": 6
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "name": "studio 19ème ( bail mobilité)",
+      "author": "Entire apartment hosted by Yasmina",
+      "price": "$34/ night",
+      "description": "Très beau studio de 11m2 refait à neuf très bien équipé",
+      "photo": "https://a0.muscache.com/im/pictures/e3d00032-1600-4a66-8768-76ff66e4aef2.jpg?im_w=1200",
+      "genre": "appartments",
+      "id": 8
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "name": "Paris center beautiful 1 bedroom",
+      "author": "Entire apartment hosted by Cedric",
+      "price": "$61/ night",
+      "description": "In the heart of Montorgueil, in the 2nd district",
+      "photo": "https://a0.muscache.com/im/pictures/8de54ac7-ef7d-498c-b027-b99a47d282dc.jpg?im_w=1200",
+      "genre": "appartments",
+      "id": 9
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "photo": "https://a0.muscache.com/im/pictures/432eba49-5158-4155-b588-cd3cd754f7a8.jpg?im_w=1200",
+      "name": "LE MARAIS/LA SEINE ARTIST STUDIO",
+      "author": "Entire apartment hosted by Sarah",
+      "price": "$86/ night",
+      "description": "Newly remodeled large artist studio, in the very heart of Paris",
+      "genre": "appartments",
+      "id": 10
+    }
+  ]
+}
