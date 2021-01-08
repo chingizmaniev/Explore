@@ -9,7 +9,15 @@ import { productsContext } from '../contexts/ProductContext';
 import './Home.css'
 
 function Home() {
-    const { getProductsEntireHomes, getProductsCabbinsAndCottages, getProductsAppartments, getProductsUniqueStays, productsEntireHomes, productsCabbinsAndCottages, productsAppartments } = useContext(productsContext)
+    const {
+        getProductsEntireHomes,
+        getProductsCabbinsAndCottages,
+        getProductsAppartments,
+        getProductsUniqueStays,
+        productsEntireHomes,
+        productsCabbinsAndCottages,
+        productsAppartments
+    } = useContext(productsContext)
 
     useEffect(() => {
         getProductsEntireHomes()
@@ -17,6 +25,8 @@ function Home() {
         getProductsAppartments()
         getProductsUniqueStays()
     }, [])
+
+
 
     return (
         <div className="home">
@@ -30,6 +40,7 @@ function Home() {
                         item={item}
                     />
                 ))}
+
             </div>
             <div className="category">
                 <h3>Cabbins and Cottages</h3>

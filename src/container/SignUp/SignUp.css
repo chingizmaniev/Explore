@@ -2,7 +2,7 @@ button {
   cursor: pointer;
   outline: none;
   border: none;
-  color: white !important;
+  color: black !important;
   background-color: #ff7779;
   width: 140px;
   height: 40px;

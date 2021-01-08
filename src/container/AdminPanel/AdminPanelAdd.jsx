@@ -18,7 +18,7 @@ const AdminPanelAdd = (props) => {
     console.log(product)
 
     function validateInput() {
-        if (!product.genre || !product.name.trim() || !product.author.trim() || !product.price.trim() || !product.description.trim() || !product.photo.trim()) {
+        if (!product.genre || !product.name.trim() || !product.author.trim() || !product.price.trim() || !product.description.trim() || !product.photo.trim() || !product.star.trim()) {
             return alert("Заполните поля!!!")
         }
         else {
@@ -36,11 +36,12 @@ const AdminPanelAdd = (props) => {
                 <option value="appartments">Appartments</option>
                 <option value="uniqueStays">Unique stays</option>
             </select>
-            <input className="inputs" onChange={createNewProduct} placeholder="название" name="name" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="name" name="name" type="text" />
             <input className="inputs" onChange={createNewProduct} placeholder="автор" name="author" type="text" />
             <input className="inputs" onChange={createNewProduct} placeholder="цена" name="price" type="text" />
             <input className="inputs" onChange={createNewProduct} placeholder="описание" name="description" type="text" />
             <input className="inputs" onChange={createNewProduct} placeholder="фото" name="photo" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="star" name="star" type="text" />
             <button className="inputs" onClick={validateInput}>Add</button>
         </div>
     );

@@ -3,79 +3,86 @@
     {
       "comments": [],
       "likes": 0,
-      "name": "SD GORGEOUS STUDIO+Walk 2 best places+SANITIZED!",
-      "author": "Entire apartment hosted by Neil",
+      "name": "Beach house in Los Angeles",
+      "author": "4 guests · 1 bedroom · 2 beds · 1 bath",
       "price": "$73/ night",
-      "description": "Newly remodeled large artist studio,",
+      "description": "Newly remodeled large artist studio",
       "photo": "https://a0.muscache.com/im/pictures/6adad3fe-5e59-43db-962c-d36a531ee462.jpg?im_w=1200",
       "genre": "entireHomes",
-      "id": 1
+      "id": 1,
+      "star": "4.65"
     },
     {
       "comments": [],
       "likes": 0,
       "name": "Paris house",
-      "author": "John",
+      "author": "2 guests · Studio · 1 bed · 1 bath",
       "price": "100 $ / night",
       "description": "Nice house in France",
       "photo": "https://a0.muscache.com/im/pictures/7b4d0da4-cd69-45a9-9178-7a24d3113f64.jpg?im_w=1200",
       "genre": "entireHomes",
-      "id": 2
+      "id": 2,
+      "star": "4.90"
     },
     {
       "comments": [],
       "likes": 0,
       "name": "Loft in London",
-      "author": "Patrick Brien",
+      "author": "6 guests · 2 bedrooms · 2 beds · 2 baths",
       "price": "45 $ / night",
       "description": "Beutiful beach house",
-      "photo": "https://a0.muscache.com/im/pictures/07b7ea63-c1f8-4b0f-ba16-29779079e75c.jpg?im_w=1200",
+      "photo": "https://a0.muscache.com/im/pictures/456995/cd494316_original.jpg?im_w=1200",
       "genre": "entireHomes",
-      "id": 3
+      "id": 3,
+      "star": "4.85"
     },
     {
       "comments": [],
       "likes": 0,
       "photo": "https://a0.muscache.com/im/pictures/07b7ea63-c1f8-4b0f-ba16-29779079e75c.jpg?im_w=1200",
       "name": "Sunny house in San Diego",
-      "author": "Tom Cruise",
+      "author": "3 guests · 1 bedroom · 2 beds · 1 bath",
       "price": "55 $/night",
       "description": "Sunny house in San Diego",
       "genre": "cabbinsAndCottages",
-      "id": 4
+      "id": 4,
+      "star": "5.0"
     },
     {
       "comments": [],
       "likes": 0,
       "photo": "https://a0.muscache.com/im/pictures/7b88ec1a-ed37-42f0-8056-d3bc1fff9a4c.jpg?im_w=1200",
       "name": "House in LA",
-      "author": "Chis",
+      "author": "5 guests · 2 bedrooms · 2 beds · 2 baths",
       "price": "34 $/ night",
       "description": "House in LA",
       "genre": "cabbinsAndCottages",
-      "id": 5
+      "id": 5,
+      "star": "4.3"
     },
     {
       "comments": [],
       "likes": 0,
       "photo": "https://a0.muscache.com/im/pictures/ab14e2ca-0a11-4530-81e3-9f7f9ab54b4f.jpg?im_w=1200",
       "name": "Appartment in New York",
-      "author": "Tracey",
+      "author": "7 guests · 2 bedrooms · 3 beds · 2 baths",
       "price": "77 $/night",
       "description": "Appartment in New York",
       "genre": "cabbinsAndCottages",
-      "id": 6
+      "id": 6,
+      "star": "4.6"
     },
     {
       "comments": [],
       "likes": 0,
       "name": "studio 19ème ( bail mobilité)",
-      "author": "Entire apartment hosted by Yasmina",
+      "author": "3 guests · 1 bedroom · 1 bed · 1 bath",
       "price": "$34/ night",
       "description": "Très beau studio de 11m2 refait à neuf très bien équipé",
       "photo": "https://a0.muscache.com/im/pictures/e3d00032-1600-4a66-8768-76ff66e4aef2.jpg?im_w=1200",
       "genre": "appartments",
-      "id": 8
+      "id": 8,
+      "star": "4.7"
     },
     {
       "comments": [],
@@ -86,18 +93,32 @@
       "description": "In the heart of Montorgueil, in the 2nd district",
       "photo": "https://a0.muscache.com/im/pictures/8de54ac7-ef7d-498c-b027-b99a47d282dc.jpg?im_w=1200",
       "genre": "appartments",
-      "id": 9
+      "id": 9,
+      "star": "4.8"
     },
     {
       "comments": [],
       "likes": 0,
-      "photo": "https://a0.muscache.com/im/pictures/432eba49-5158-4155-b588-cd3cd754f7a8.jpg?im_w=1200",
-      "name": "LE MARAIS/LA SEINE ARTIST STUDIO",
-      "author": "Entire apartment hosted by Sarah",
-      "price": "$86/ night",
-      "description": "Newly remodeled large artist studio, in the very heart of Paris",
+      "photo": "https://a0.muscache.com/im/pictures/274df76c-89d2-4ec3-9d8c-1e7c9b67029f.jpg?im_w=1200",
+      "name": "Beach Front Bungalow -right on the water in the Village of La Jolla.",
+      "author": "4 guests · 1 bedroom · 2 beds · 1 bath",
+      "price": "$159/ night",
+      "description": "You'll be amazed as you walk into this gorgeous little jewel",
       "genre": "appartments",
-      "id": 10
+      "id": 10,
+      "star": "5.0"
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "photo": "https://a0.muscache.com/im/pictures/57115517/3bdd93e6_original.jpg?im_w=1200",
+      "name": "Upscale Private in San Francisco",
+      "author": "2 guests · 1 bedroom · 1 bed · 1 private bath",
+      "price": "$139/ night",
+      "description": "Welcome - newly remodeled private bedroom with queen bed & spa-like",
+      "star": "4.5",
+      "genre": "entireHomes",
+      "id": 11
     }
   ]
 }

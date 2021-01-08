@@ -28,10 +28,11 @@ const AdminPanel = () => {
                         <th>~</th>
                         <th>image</th>
                         <th>name</th>
-                        <th>автор</th>
+                        <th>details</th>
                         <th>категория</th>
                         <th>price</th>
-                        <th>Описание</th>
+                        <th>description</th>
+                        <th>star</th>
                         <th>~</th>
                         <th>~</th>
                     </tr>
@@ -46,6 +47,7 @@ const AdminPanel = () => {
                             <td>{item.genre}</td>
                             <td>{item.price}</td>
                             <td style={{ maxWidth: '250px', textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{item.description}</td>
+                            <td>{item.star}</td>
                             <td><button onClick={() => delProduct(item.id)}>DEL</button></td>
                             <td><Link to="/admin-panel-edit"><button onClick={() => getProductToEdit(item.id)}>EDIT</button></Link></td>
                         </tr>

@@ -21,7 +21,7 @@ const AdminPanelEdit = (props) => {
     }
 
     function validateInput() {
-        if (!newProduct.genre || !newProduct.name.trim() || !newProduct.author.trim() || !newProduct.price.trim() || !newProduct.description.trim() || !newProduct.photo.trim()) {
+        if (!newProduct.genre || !newProduct.name.trim() || !newProduct.author.trim() || !newProduct.price.trim() || !newProduct.description.trim() || !newProduct.photo.trim() || !newProduct.star.trim()) {
             return alert("Заполните поля!!!")
         }
         else {
@@ -45,6 +45,7 @@ const AdminPanelEdit = (props) => {
                     <input className="inputs" value={newProduct.price} onChange={updateProduct} placeholder="цена" name="price" type="text" />
                     <input className="inputs" value={newProduct.description} onChange={updateProduct} placeholder="описание" name="description" type="text" />
                     <input className="inputs" value={newProduct.photo} onChange={updateProduct} placeholder="фото" name="photo" type="text" />
+                    <input className="inputs" value={newProduct.star} onChange={updateProduct} placeholder="star" name="star" type="text" />
                     <button className="inputs" onClick={validateInput}>Edit</button>
                 </div>
 

@@ -1,20 +1,21 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-// import { productsContext } from '../../contexts/ProductsContext';
+import { productsContext } from '../contexts/ProductContext';
 import './ProductDetails.css';
 import user from '../Images/user (1).svg';
-import { productsContext } from '../contexts/ProductContext';
 
 const ProductDetails = (props) => {
     const {
         getDetailsOfProduct,
         productDetails,
+        item,
+        products,
         addAndDeleteProductInCart,
         addAndDeleteProductInFavorites,
-        getProductsEntireHomes,
-        getProductsCabbinsAndCottages,
-        getProductsAppartments,
-        getProductsUniqueStays,
+        getProductsBusiness,
+        getProductsClassicLiterature,
+        getProductsChildren,
+        getProductsFantasy,
         sendComment,
         addAndDeleteLikes,
         checkProductInLikes,
@@ -25,31 +26,31 @@ const ProductDetails = (props) => {
 
     //comments start
 
-    useEffect(() => {
-        getDetailsOfProduct(props.match.params.id)
-    }, [])
+    // useEffect(() => {
+    //     getDetailsOfProduct(props.match.params.id)
+    // }, [])
 
-    const [value1, setValue1] = useState('')
-    const [value2, setValue2] = useState('')
+    // const [value1, setValue1] = useState('')
+    // const [value2, setValue2] = useState('')
 
-    const [newProduct, setNewProduct] = useState(productDetails)
+    // const [newProduct, setNewProduct] = useState(productDetails)
 
-    useEffect(() => {
-        setNewProduct(productDetails)
-    }, [productDetails])
+    // useEffect(() => {
+    //     setNewProduct(productDetails)
+    // }, [productDetails])
 
-    function handleSave(e) {
-        let obj = {
-            userName: value1,
-            userComment: value2
-        }
-        if (!obj.userName.trim() || !obj.userComment.trim()) {
-            return alert("Заполните все поля")
-        }
-        sendComment(newProduct, obj)
-        setValue1('')
-        setValue2('')
-    }
+    // function handleSave(e) {
+    //     let obj = {
+    //         userName: value1,
+    //         userComment: value2
+    //     }
+    //     if (!obj.userName.trim() || !obj.userComment.trim()) {
+    //         return alert("Заполните все поля")
+    //     }
+    //     sendComment(newProduct, obj)
+    //     setValue1('')
+    //     setValue2('')
+    // }
 
     //comments end
 
@@ -57,46 +58,48 @@ const ProductDetails = (props) => {
         <>
             {productDetails ?
                 (
+
                     <div>
-                        <Container>
-                            <div className="block-product-details">
-                                <div>
-                                    <img className="product-details-img" style={{ borderRadius: "2%", width: "300px" }} src={productDetails.photo} alt="" />
-                                </div>
-                                <div className="details-description">
-                                    <h3 className="h3">{productDetails.name}</h3>
-                                    <p>{productDetails.author} (автор)</p>
-                                    <p>{productDetails.price} сомов</p>
-                                    <button style={{ backgroundColor: checkProductInCart(productDetails.id) ? "red" : "#573ba3" }} onClick={() => addAndDeleteProductInCart(productDetails)} className="btn-add-to-cart">В корзину</button>
-                                    <button style={{ backgroundColor: checkProductInFavorites(productDetails.id) ? "red" : "white", color: checkProductInFavorites(productDetails.id) ? "white" : "#573ba3" }} onClick={() => addAndDeleteProductInFavorites(productDetails)} className="btn-add-to-wishlist">В избранное</button>
-                                    <p style={{ cursor: 'pointer', color: checkProductInLikes(productDetails.id) ? "red" : "black" }} onClick={() => addAndDeleteLikes(productDetails)}>Нравится {productDetails.likes}</p>
-                                    <p className="detail-block-description">{productDetails.description}</p>
-                                </div>
-                            </div>
-                            <div >
-                                <h3 style={{ display: "flex", justifyContent: "start" }}>Отзывы</h3>
-                                <div>
+                        {products.map(item => (
+                            <Container>
+                                <div className="block-product-details">
                                     <div>
-                                        {productDetails.comments.map((item, index) => (
-                                            <div key={`${index + 1}`}>
-                                                <div className="user-name" style={{ display: "flex", alignItems: "center", textAlign: "left", padding: "3%", border: "1px solid #d5d5d5", marginBottom: "20px" }}>
-                                                    <div className="user">
-                                                        <div style={{ display: "flex", justifyContent: "start", alignItems: "center" }}>
-                                                            <img className="user-icon" style={{ width: "5%", marginRight: "3%" }} src={user} alt="" />
-                                                            <h5>{item.userName}</h5>
-                                                        </div>
-                                                        <div className="comment" style={{ marginLeft: " 8%", width: "80%" }}>
-                                                            <span>
-                                                                {item.userComment}
-                                                            </span>
+                                        <img className="product-details-img" style={{ borderRadius: "2%", width: "300px" }} src={productDetails.photo} alt="" />
+                                    </div>
+                                    <div className="details-description">
+                                        <h3 className="h3">{item.name}</h3>
+                                        <p>{productDetails.author} (автор)</p>
+                                        <p>{productDetails.price} сомов</p>
+                                        <button style={{ backgroundColor: checkProductInCart(productDetails.id) ? "red" : "#573ba3" }} onClick={() => addAndDeleteProductInCart(productDetails)} className="btn-add-to-cart">В корзину</button>
+                                        <button style={{ backgroundColor: checkProductInFavorites(productDetails.id) ? "red" : "white", color: checkProductInFavorites(productDetails.id) ? "white" : "#573ba3" }} onClick={() => addAndDeleteProductInFavorites(productDetails)} className="btn-add-to-wishlist">В избранное</button>
+                                        <p style={{ cursor: 'pointer', color: checkProductInLikes(productDetails.id) ? "red" : "black" }} onClick={() => addAndDeleteLikes(productDetails)}>Нравится {productDetails.likes}</p>
+                                        <p className="detail-block-description">{productDetails.description}</p>
+                                    </div>
+                                </div>
+                                <div >
+                                    <h3 style={{ display: "flex", justifyContent: "start" }}>Отзывы</h3>
+                                    <div>
+                                        <div>
+                                            {productDetails.comments.map((item, index) => (
+                                                <div key={`${index + 1}`}>
+                                                    <div className="user-name" style={{ display: "flex", alignItems: "center", textAlign: "left", padding: "3%", border: "1px solid #d5d5d5", marginBottom: "20px" }}>
+                                                        <div className="user">
+                                                            <div style={{ display: "flex", justifyContent: "start", alignItems: "center" }}>
+                                                                <img className="user-icon" style={{ width: "5%", marginRight: "3%" }} src={user} alt="" />
+                                                                <h5>{item.userName}</h5>
+                                                            </div>
+                                                            <div className="comment" style={{ marginLeft: " 8%", width: "80%" }}>
+                                                                <span>
+                                                                    {item.userComment}
+                                                                </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        ))}
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
-                                <div style={{ display: "flex", flexDirection: "column", margin: "30px", justifyContent: "center", alignItems: "center" }}>
+                                    {/* <div style={{ display: "flex", flexDirection: "column", margin: "30px", justifyContent: "center", alignItems: "center" }}>
                                     <input
                                         className="comment"
                                         style={{ border: "none", borderRadius: "0%", borderBottom: "1px solid gray", width: "40%" }}
@@ -116,9 +119,10 @@ const ProductDetails = (props) => {
                                         type="text">
                                     </textarea>
                                     <button className="save-comment-btn" onClick={handleSave}>Оставить отзыв</button>
+                                </div> */}
                                 </div>
-                            </div>
-                        </Container>
+                            </Container>
+                        ))}
                     </div>
                 )
                 :
