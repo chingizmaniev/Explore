@@ -22,7 +22,7 @@ const Routes = () => {
                 <Header />
                 <ProductsContextProvider>
                     <Switch>
-                        <Route exact path="/" />
+                        {/* <Route exact path="/" /> */}
                         <Route exact path="/" component={Home} />
                         <Route exact path="/search" component={SearchPage} />
                         <Route exact path="/products-details:id" component={ProductDetails} />
