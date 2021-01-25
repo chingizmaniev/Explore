@@ -19,9 +19,10 @@ const Routes = () => {
     return (
         <div>
             <BrowserRouter>
-                <Header />
+
                 <ProductsContextProvider>
                     <Switch>
+                        <Header />
                         <Route exact path="/" component={Home} />
                         <Route exact path="/search" component={SearchPage} />
                         <Route exact path="/" />
