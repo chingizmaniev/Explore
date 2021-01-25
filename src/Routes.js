@@ -16,17 +16,18 @@ import SignIn from './container/SignIn/SignIn';
 import SignUp from './container/SignUp/SignUp';
 
 const Routes = () => {
+
     return (
         <div>
-            <Header />
             <BrowserRouter>
+                <Header />
                 <ProductsContextProvider>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/search" component={SearchPage} />
-                        <Route exact path="/" />
-                        <Route exact path="/products-details:id" component={ProductDetails} />
-                    </Switch>
+                    {/* <Switch> */}
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/search" component={SearchPage} />
+                    <Route exact path="/" />
+                    <Route exact path="/products-details:id" component={ProductDetails} />
+                    {/* </Switch> */}
                 </ProductsContextProvider>
                 <AdminContextProvider>
                     <Switch>
