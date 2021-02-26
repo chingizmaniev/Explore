@@ -75,7 +75,7 @@
     {
       "comments": [],
       "likes": 0,
-      "name": "studio 19ème ( bail mobilité)",
+      "name": "Aventura Florida",
       "author": "3 guests · 1 bedroom · 1 bed · 1 bath",
       "price": "$34/ night",
       "description": "Très beau studio de 11m2 refait à neuf très bien équipé",
@@ -87,8 +87,8 @@
     {
       "comments": [],
       "likes": 0,
-      "name": "Paris center beautiful 1 bedroom",
-      "author": "Entire apartment hosted by Cedric",
+      "name": "Paris center",
+      "author": "2 guests · Studio · 1 bed · 1 bath",
       "price": "$61/ night",
       "description": "In the heart of Montorgueil, in the 2nd district",
       "photo": "https://a0.muscache.com/im/pictures/8de54ac7-ef7d-498c-b027-b99a47d282dc.jpg?im_w=1200",
@@ -100,7 +100,7 @@
       "comments": [],
       "likes": 0,
       "photo": "https://a0.muscache.com/im/pictures/274df76c-89d2-4ec3-9d8c-1e7c9b67029f.jpg?im_w=1200",
-      "name": "Beach Front Bungalow -right on the water in the Village of La Jolla.",
+      "name": "Beach Front Bungalow",
       "author": "4 guests · 1 bedroom · 2 beds · 1 bath",
       "price": "$159/ night",
       "description": "You'll be amazed as you walk into this gorgeous little jewel",
@@ -119,6 +119,18 @@
       "star": "4.5",
       "genre": "entireHomes",
       "id": 11
+    },
+    {
+      "comments": [],
+      "likes": 0,
+      "genre": "appartments",
+      "photo": "https://a0.muscache.com/im/pictures/5dd639ae-c05d-40d7-bfb2-3dac8dd281a7.jpg?im_w=1200",
+      "name": "Miami Brickell Apartment",
+      "author": "2 guests · Studio · 1 bed · 1 bath",
+      "price": "$91/ night",
+      "description": "Come spend your time in sunny Miami one block away from the beach!",
+      "star": "5",
+      "id": 12
     }
   ]
 }

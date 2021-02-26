@@ -3,6 +3,7 @@
     center center;
   height: 60vh;
   position: relative;
+  padding-top: 40px;
 }
 
 .banner__info {

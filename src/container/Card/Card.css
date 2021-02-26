@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-.card__info {
+.card {
   margin-top: -9px;
   border-radius: 10px;
   padding: 20px;
@@ -27,13 +27,13 @@
   border: 1;
 }
 
-.card__info > h2 {
+.card > h2 {
   font-size: 18px;
   font-weight: 600;
 }
 
-.card__info > h4 {
-  font-size: 14px;
+.card > h4 {
+  font-size: 20px;
   font-weight: 300;
   margin-top: 8px;
   margin-bottom: 8px;

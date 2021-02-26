@@ -19,7 +19,7 @@ const AdminPanelAdd = (props) => {
 
     function validateInput() {
         if (!product.genre || !product.name.trim() || !product.author.trim() || !product.price.trim() || !product.description.trim() || !product.photo.trim() || !product.star.trim()) {
-            return alert("Заполните поля!!!")
+            return alert("Fill out all fields!!")
         }
         else {
             addProduct(product, props.history)
@@ -30,17 +30,17 @@ const AdminPanelAdd = (props) => {
 
         <div className="add__panel">
             <select name="genre" id="" onChange={createNewProduct}>
-                <option value="">Выбрать категорию</option>
+                <option value="">Select category</option>
                 <option value="entireHomes">Entire homes</option>
                 <option value="cabbinsAndCottages">Cabbins and cottages</option>
                 <option value="appartments">Appartments</option>
                 <option value="uniqueStays">Unique stays</option>
             </select>
             <input className="inputs" onChange={createNewProduct} placeholder="name" name="name" type="text" />
-            <input className="inputs" onChange={createNewProduct} placeholder="автор" name="author" type="text" />
-            <input className="inputs" onChange={createNewProduct} placeholder="цена" name="price" type="text" />
-            <input className="inputs" onChange={createNewProduct} placeholder="описание" name="description" type="text" />
-            <input className="inputs" onChange={createNewProduct} placeholder="фото" name="photo" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="hosted by" name="author" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="price" name="price" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="description" name="description" type="text" />
+            <input className="inputs" onChange={createNewProduct} placeholder="photo" name="photo" type="text" />
             <input className="inputs" onChange={createNewProduct} placeholder="star" name="star" type="text" />
             <button className="inputs" onClick={validateInput}>Add</button>
         </div>

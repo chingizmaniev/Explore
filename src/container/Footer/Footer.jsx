@@ -14,12 +14,12 @@ const Footer = () => {
         <div className="footer">
             <div className="footContainer">
                 <div className="footBar">
-                    <p><a className="footer-link" href="">О нас</a></p>
-                    <p><a className="footer-link" href="">Контакты</a></p>
-                    <p><a className="footer-link" href="">Подарочная карта</a></p>
-                    <p><a className="footer-link" href="">Служба поддержки</a></p>
-                    <p><a className="footer-link" href="">Политика конфиденциальности</a></p>
-                    <p><a className="footer-link" href="">Для авторов</a></p>
+                    <p><a className="footer-link" href="">About us</a></p>
+                    <p><a className="footer-link" href="">Contact us</a></p>
+                    <p><a className="footer-link" href="">Gift card</a></p>
+                    <p><a className="footer-link" href="">Support</a></p>
+                    <p><a className="footer-link" href="">Privacy policy</a></p>
+                    <p><a className="footer-link" href="">For partners</a></p>
 
                     <div className="footIcons">
                         <a href="https://www.facebook.com/bookshop.org/" target="_blank" rel="noopener noreferrer">
